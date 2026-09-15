@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adi Zilber — Portfolio</title>
+  <meta name="description" content="Portfolio of Adi Zilber — projects, skills, and contact." />
+  <link rel="icon" href="data:," />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container">
+      <a href="#top" class="logo">Adi Zilber</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode" title="Toggle theme">
+        <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+        <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79Z"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="top" class="hero container">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Hi, I'm</p>
+        <h1>Adi Zilber</h1>
+        <p class="hero-tagline">Building thoughtful software and clean, usable interfaces.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-avatar reveal" aria-hidden="true">
+        <div class="avatar-blob">AZ</div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2 class="section-title reveal">About</h2>
+      <div class="about-grid">
+        <p class="about-text reveal">
+          I'm a developer who enjoys turning ideas into working products — from small
+          scripts to full applications. This site replaces my old Squarespace page with
+          something I fully own and control: plain HTML, CSS, and JavaScript, hosted for
+          free and easy to extend.
+        </p>
+        <ul class="about-facts reveal">
+          <li><span>Location</span>Remote / Worldwide</li>
+          <li><span>Focus</span>Web development &amp; automation</li>
+          <li><span>Available for</span>Freelance &amp; collaboration</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2 class="section-title reveal">Projects</h2>
+      <p class="section-subtitle reveal">A few things I've built. Replace these with your own.</p>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-thumb" style="--tint-a:#6d5efc;--tint-b:#38bdf8;">01</div>
+          <div class="project-body">
+            <h3>Project One</h3>
+            <p>A short description of what this project does and the problem it solves.</p>
+            <ul class="tags">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live demo</a>
+              <a href="#" target="_blank" rel="noopener">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-thumb" style="--tint-a:#f97362;--tint-b:#fbbf24;">02</div>
+          <div class="project-body">
+            <h3>Project Two</h3>
+            <p>A short description of what this project does and the problem it solves.</p>
+            <ul class="tags">
+              <li>Node.js</li><li>API</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live demo</a>
+              <a href="#" target="_blank" rel="noopener">Source</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-thumb" style="--tint-a:#22c55e;--tint-b:#06b6d4;">03</div>
+          <div class="project-body">
+            <h3>Project Three</h3>
+            <p>A short description of what this project does and the problem it solves.</p>
+            <ul class="tags">
+              <li>Python</li><li>Automation</li>
+            </ul>
+            <div class="project-links">
+              <a href="#" target="_blank" rel="noopener">Live demo</a>
+              <a href="#" target="_blank" rel="noopener">Source</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <h2 class="section-title reveal">Skills</h2>
+      <ul class="skills-grid">
+        <li class="reveal">HTML &amp; CSS</li>
+        <li class="reveal">JavaScript</li>
+        <li class="reveal">Git &amp; GitHub</li>
+        <li class="reveal">Node.js</li>
+        <li class="reveal">Python</li>
+        <li class="reveal">APIs</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2 class="section-title reveal">Contact</h2>
+      <p class="section-subtitle reveal">Have a project in mind or just want to say hi?</p>
+      <div class="contact-actions reveal">
+        <a class="btn btn-primary" href="mailto:adizilber@gmail.com">adizilber@gmail.com</a>
+        <div class="social-links">
+          <a href="#" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+          <a href="#" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Adi Zilber. Built with HTML, CSS &amp; JS.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
