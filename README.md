@@ -1,51 +1,33 @@
 # Portfolio
 
-A static portfolio website built with plain HTML, CSS, and JavaScript — no
-framework, no build step, no hosting fees.
+Scaffold for a static portfolio site — plain HTML, CSS, and JavaScript, no
+framework or build step. Structure is in place; content is not filled in
+yet.
 
 ## Structure
 
 ```
-index.html        Single-page site: hero, about, projects, skills, contact
-css/style.css      All styling, incl. light/dark theme
-js/main.js         Mobile nav, theme toggle, scroll-reveal animation
-.github/workflows/deploy.yml   Auto-deploys to GitHub Pages on push to main
+index.html               Page skeleton: header/nav, hero, about, projects, contact, footer
+css/style.css             Base reset + CSS variables (colors, spacing) — no visual design yet
+js/main.js                Minimal stub (sets footer year)
+assets/images/            Put images here (photos, project screenshots)
+content/                  Structured content extracted from the old site goes here
+                          (e.g. content/projects.json, content/about.md)
+.github/workflows/deploy.yml   GitHub Pages deploy on push to main
 ```
 
-## Customize
+## Status
 
-- Replace "Adi Zilber" and the tagline/bio text in `index.html`.
-- Swap the placeholder project cards under `#projects` with your real
-  projects (title, description, tags, links). Add real screenshots by
-  putting images in `assets/` and swapping the `.project-thumb` gradient
-  divs for `<img>` tags.
-- Update the contact email and add real social links under `#contact`.
-- Colors and spacing live in CSS custom properties at the top of
-  `css/style.css` (`:root`) — change `--accent` to re-theme the whole site.
+- [ ] Extract content/images from the current Squarespace site into `content/` and `assets/images/`
+- [ ] Fill in hero, about, projects, contact sections in `index.html`
+- [ ] Style the site in `css/style.css`
+- [ ] Wire up any interactivity needed in `js/main.js`
+- [ ] Enable GitHub Pages (Settings → Pages → Source: GitHub Actions) and deploy
 
 ## Run locally
-
-No build tools required. Either:
-
-- Open `index.html` directly in a browser, or
-- Serve it locally for a closer-to-production setup:
 
 ```bash
 npx serve .
 # or
 python3 -m http.server 8000
 ```
-
-## Deploy
-
-This repo includes a GitHub Actions workflow that deploys to **GitHub
-Pages** automatically on every push to `main`.
-
-To enable it:
-1. Push this repo to GitHub (if not already there).
-2. Go to **Settings → Pages** in the GitHub repo.
-3. Under "Build and deployment", set **Source** to "GitHub Actions".
-4. Push to `main` — the site will be live at
-   `https://<your-username>.github.io/<repo-name>/`.
-
-No Squarespace subscription needed going forward — this repo *is* the site.
